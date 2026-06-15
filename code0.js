@@ -124,7 +124,7 @@ gdjs.copyArray(runtimeScene.getObjects("enemy"), gdjs.QuizCode.GDenemyObjects1);
 }
 }
 {for(var i = 0, len = gdjs.QuizCode.GDTimeObjects1.length ;i < len;++i) {
-    gdjs.QuizCode.GDTimeObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(10 - Math.floor(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "T2A"))));
+    gdjs.QuizCode.GDTimeObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(15 - Math.floor(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "T2A"))));
 }
 }
 }
@@ -137,7 +137,7 @@ gdjs.copyArray(runtimeScene.getObjects("enemy"), gdjs.QuizCode.GDenemyObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "T2A") >= 10;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "T2A") >= 15;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).add(1);
 }
