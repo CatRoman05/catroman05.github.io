@@ -7,7 +7,7 @@ gdjs.LOGICCode.GDWireObjects1= [];
 gdjs.LOGICCode.GDTextObjects1= [];
 
 
-gdjs.LOGICCode.userFunc0x9ec550 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.LOGICCode.userFunc0xaef5e0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 if (
 	!runtimeScene
@@ -20,37 +20,13 @@ if (
 		.get("Initialized")
 		.setBoolean(true);
     const levels = [
-        {lamps:[
-        {x:848,y:260,start:false,links:[1,2]},
-        {x:626,y:530,start:false,links:[0]},
-        {x:980,y:530,start:false,links:[0]}
-        ]},
-        {lamps:[
-        {x:700,y:260,start:true,links:[1,2]},
-        {x:626,y:530,start:false,links:[0]},
-        {x:980,y:530,start:false,links:[0]}
-        ]},
-        {lamps:[
-        {x:348,y:233,start:true,links:[1]},
-        {x:733,y:370,start:false,links:[0,2,3]},
-        {x:1216,y:160,start:false,links:[1,3]},
-        {x:1216,y:500,start:false,links:[1,2]}
-        ]},
-        {lamps:[
-        {x:325,y:70,start:false,links:[1,3]},
-        {x:750,y:70,start:false,links:[0,2]},
-        {x:1092,y:70,start:false,links:[1,5]},
-        {x:514,y:561,start:false,links:[0,4]},
-        {x:886,y:561,start:false,links:[3,5]},
-        {x:1216,y:561,start:false,links:[2,4]}
-        ]},
-        {lamps:[
-        {x:325,y:200,start:false,links:[1,5]},
-        {x:514,y:70,start:false,links:[0,2]},
-        {x:750,y:70,start:false,links:[1,3]},
-        {x:886,y:70,start:false,links:[2,4]},
-        {x:1092,y:70,start:false,links:[3,5]},
-        {x:1216,y:200,start:false,links:[4,0]}
+		{lamps:[
+        {x:162,y:400,start:false,links:[1,5]},    
+        {x:514,y:112,start:false,links:[0,2]},   
+        {x:750,y:112,start:false,links:[1,3]},    
+        {x:886,y:112,start:false,links:[2,4]},   
+        {x:1092,y:112,start:false,links:[3,5]},    
+        {x:1216,y:400,start:false,links:[0,4]} 
         ]},
         {lamps:[
         {x:325,y:70,start:false,links:[1,3]},
@@ -60,26 +36,60 @@ if (
         {x:886,y:561,start:false,links:[3,5]},
         {x:1216,y:561,start:false,links:[2,4]}
         ]},
-        {lamps:[
-        {x:217,y:84,start:false,links:[2,1,4]},
-        {x:750,y:84,start:false,links:[0,3,4]},
-        {x:217,y:600,start:false,links:[1,3,4]},
-        {x:750,y:600,start:false,links:[2,3,4]},
-        {x:546,y:370,start:false,links:[0,1,2,3]}
-    ]},
-        {lamps:[
+		{lamps:[
         {x:217,y:84,start:false,links:[2,1]},
         {x:750,y:84,start:false,links:[0,3]},
         {x:217,y:600,start:false,links:[0,3]},
         {x:750,y:600,start:false,links:[2,1]},
-    ]},
-        {lamps:[
+		]},
+		{lamps:[
         {x:217,y:84,start:false,links:[2,1,4]},
         {x:750,y:84,start:false,links:[0,3,4]},
         {x:217,y:600,start:false,links:[0,3,4]},
         {x:750,y:600,start:false,links:[2,1,4]},
         {x:546,y:370,start:true,links:[0,1,2,3]}
-    ]},
+		]},
+		{lamps:[
+		{x:300,y:150,start:false,links:[1]},
+		{x:450,y:250,start:false,links:[0,2]},
+		{x:600,y:350,start:false,links:[1,3]},
+		{x:750,y:450,start:false,links:[2,4,7]},
+		{x:900,y:550,start:false,links:[3,5]},
+		{x:1050,y:650,start:false,links:[4,6]},
+		{x:1200,y:750,start:false,links:[5]},
+        {x:866,y:208,start:false,links:[3]},
+		]},
+		{lamps:[
+		{x:168,y:122,start:false,links:[1,5]},      
+		{x:391,y:122,start:false,links:[0,2]},   
+		{x:550,y:352,start:false,links:[1,4,11]},     
+		{x:168,y:601,start:false,links:[5,4]},     
+		{x:391,y:601,start:false,links:[3,2]},    
+		{x:100,y:352,start:false,links:[3,0]},
+		{x:768,y:122,start:false,links:[7,11]},
+		{x:991,y:122,start:false,links:[6,8]},
+		{x:1150,y:352,start:false,links:[7,10]},
+		{x:768,y:601,start:false,links:[11,10]},
+		{x:991,y:601,start:false,links:[9,8]},
+		{x:700,y:352,start:false,links:[9,6,2]},
+		]},
+		{lamps:[
+		{x:168,y:122,start:false,links:[1,5]},      
+		{x:391,y:122,start:false,links:[0,2]},   
+		{x:550,y:352,start:false,links:[1,4,6]},     
+		{x:168,y:601,start:false,links:[5,4]},     
+		{x:391,y:601,start:false,links:[3,2]},    
+		{x:100,y:352,start:false,links:[3,0]},
+		{x:700,y:352,start:false,links:[7,10,2]},
+		{x:840,y:160,start:false,links:[6,8]},
+		{x:1060,y:230,start:false,links:[7,9]},
+		{x:1060,y:470,start:false,links:[8,10]},
+		{x:840,y:540,start:false,links:[9,6]},
+		]},
+		{lamps:[
+        {x:162,y:400,start:false,links:[1]},    
+		{x:162,y:400,start:false,links:[0]}, 
+        ]}
     ];
 	const level = levels[
 		runtimeScene
@@ -267,12 +277,40 @@ if (
 		.getVariables()
 		.get("Level")
 		.getAsNumber();
+	if (currentLevel == 8) {
+		runtimeScene.requestChange(gdjs.SceneChangeRequest.REPLACE_SCENE, "WIN")
+	}
 	const text =
 		runtimeScene.getObjects("Text")[0];
 	text.setString(
-		(currentLevel + 1) + "/9"
+		(currentLevel + 1) + "/7"
 	);
 }
+
+        // {lamps:[
+        // {x:848,y:260,start:false,links:[1,2]},
+        // {x:626,y:530,start:false,links:[0]},
+        // {x:980,y:530,start:false,links:[0]}
+        // ]},
+        // {lamps:[
+        // {x:700,y:260,start:true,links:[1,2]},
+        // {x:626,y:530,start:false,links:[0]},
+        // {x:980,y:530,start:false,links:[0]}
+        // ]},
+        // {lamps:[
+        // {x:348,y:233,start:true,links:[1]},
+        // {x:733,y:370,start:false,links:[0,2,3]},
+        // {x:1216,y:160,start:false,links:[1,3]},
+        // {x:1216,y:500,start:false,links:[1,2]}
+        // ]},
+        // {lamps:[
+        // {x:325,y:70,start:false,links:[1,3]},
+        // {x:750,y:70,start:false,links:[0,2]},
+        // {x:1092,y:70,start:false,links:[1,5]},
+        // {x:514,y:561,start:false,links:[0,4]},
+        // {x:886,y:561,start:false,links:[3,5]},
+        // {x:1216,y:561,start:false,links:[2,4]}
+        // ]},
 };
 gdjs.LOGICCode.eventsList0 = function(runtimeScene) {
 
@@ -281,7 +319,7 @@ gdjs.LOGICCode.eventsList0 = function(runtimeScene) {
 gdjs.copyArray(runtimeScene.getObjects("Lamp"), gdjs.LOGICCode.GDLampObjects1);
 
 const objects = gdjs.LOGICCode.GDLampObjects1;
-gdjs.LOGICCode.userFunc0x9ec550(runtimeScene, objects);
+gdjs.LOGICCode.userFunc0xaef5e0(runtimeScene, objects);
 
 }
 

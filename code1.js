@@ -11,6 +11,9 @@ gdjs.GAMEOVERCode.GDButtonObjects2= [];
 
 gdjs.GAMEOVERCode.mapOfGDgdjs_9546GAMEOVERCode_9546GDButtonObjects1Objects = Hashtable.newFrom({"Button": gdjs.GAMEOVERCode.GDButtonObjects1});
 gdjs.GAMEOVERCode.eventsList0 = function(runtimeScene) {
+{
+
+let elseEventsChainSatisfied = false;
 
 {
 
@@ -20,12 +23,53 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GAMEOVERCode.mapOfGDgdjs_9546GAMEOVERCode_9546GDButtonObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Quiz", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "QUIZ", false);
+}
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(0);
 }
 }
 
 }
 
+
+{
+
+
+elseEventsChainSatisfied = false;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(6).getAsNumber() == 5);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Text"), gdjs.GAMEOVERCode.GDTextObjects1);
+{for(var i = 0, len = gdjs.GAMEOVERCode.GDTextObjects1.length ;i < len;++i) {
+    gdjs.GAMEOVERCode.GDTextObjects1[i].getBehavior("Text").setText("Занадто багато помилок, спробуй ще");
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+if (!elseEventsChainSatisfied) {
+let isConditionTrue_0 = false;
+if (!elseEventsChainSatisfied) {
+gdjs.copyArray(runtimeScene.getObjects("Text"), gdjs.GAMEOVERCode.GDTextObjects1);
+{for(var i = 0, len = gdjs.GAMEOVERCode.GDTextObjects1.length ;i < len;++i) {
+    gdjs.GAMEOVERCode.GDTextObjects1[i].getBehavior("Text").setText("Тебе спіймали сбробуй ще раз");
+}
+}
+elseEventsChainSatisfied = true;
+}
+}
+
+}
+
+}
 
 };
 
