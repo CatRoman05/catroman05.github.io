@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="id">Loading...</h1>
+
+<script type="module">
+import FingerprintJS from 'https://openfpcdn.io/fingerprintjs/v4';
+
+const fp = await FingerprintJS.load();
+const result = await fp.get();
+
+document.getElementById('id').textContent = result.visitorId;
+</script>
+
+</body>
+</html>
