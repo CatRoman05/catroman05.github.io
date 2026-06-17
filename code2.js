@@ -7,7 +7,7 @@ gdjs.LOGICCode.GDWireObjects1= [];
 gdjs.LOGICCode.GDTextObjects1= [];
 
 
-gdjs.LOGICCode.userFunc0xaef5e0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.LOGICCode.userFunc0x98daf0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 if (
 	!runtimeScene
@@ -319,7 +319,7 @@ gdjs.LOGICCode.eventsList0 = function(runtimeScene) {
 gdjs.copyArray(runtimeScene.getObjects("Lamp"), gdjs.LOGICCode.GDLampObjects1);
 
 const objects = gdjs.LOGICCode.GDLampObjects1;
-gdjs.LOGICCode.userFunc0xaef5e0(runtimeScene, objects);
+gdjs.LOGICCode.userFunc0x98daf0(runtimeScene, objects);
 
 }
 
