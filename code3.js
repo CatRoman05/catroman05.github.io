@@ -9,7 +9,7 @@ gdjs.WINCode.GDcodeObjects1= [];
 gdjs.WINCode.GDcodeObjects2= [];
 
 
-gdjs.WINCode.userFunc0x987a78 = function GDJSInlineCode(runtimeScene) {
+gdjs.WINCode.userFunc0xa6b848 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 if (runtimeScene.getOnceTriggers().triggerOnce(12345678)) {
     setTimeout(() => {
@@ -34,7 +34,7 @@ if (runtimeScene.getOnceTriggers().triggerOnce(12345678)) {
                     return;
                 }
                 runtimeScene.getObjects("code")[0].setString(code)
-                gdjs.evtTools.firebaseTools.firestore.updateField("codes", "1", "next", toString(next) + 1)
+                gdjs.evtTools.firebaseTools.firestore.updateField("codes", "1", "next", parseInt(next, 10) + 1)
             }
     }, 1000);
 }
@@ -63,7 +63,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.WINCode.userFunc0x987a78(runtimeScene);
+gdjs.WINCode.userFunc0xa6b848(runtimeScene);
 
 }
 

@@ -7,7 +7,7 @@ gdjs.CHECKCode.GDtitleObjects1= [];
 gdjs.CHECKCode.GDtitleObjects2= [];
 
 
-gdjs.CHECKCode.userFunc0xb7f258 = function GDJSInlineCode(runtimeScene) {
+gdjs.CHECKCode.userFunc0xa13038 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 if (runtimeScene.getOnceTriggers().triggerOnce(123456)) {
     setTimeout(async () => {
@@ -15,7 +15,7 @@ if (runtimeScene.getOnceTriggers().triggerOnce(123456)) {
         script.src = "https://openfpcdn.io/fingerprintjs/v4/iife.min.js";
         document.head.appendChild(script);
         script.onload = async () => {
-            const testers = ["5daa66a452d450d6e7a865dcb4a4cee66", "30826ee2d9e02968e7a90e5e139e2d72", "21e6d5fc757c3cfd84619aa62b1ee9e9", "d7fa68bdb1147687ea8a25c58cf8c6c4"] //GDev, Vika, Maksim, Ya
+            const testers = ["5daa66a452d450d6e7a865dcb4a4cee6", "30826ee2d9e02968e7a90e5e139e2d72", "21e6d5fc757c3cfd84619aa62b1ee9e9", "d7fa68bdb1147687ea8a25c58cf8c6c4"] //GDev, Vika, Maksim, Ya
             const fp = await FingerprintJS.load();
             const result = await fp.get();
              if (!testers.includes(result.visitorId)) {
@@ -65,7 +65,7 @@ gdjs.CHECKCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.CHECKCode.userFunc0xb7f258(runtimeScene);
+gdjs.CHECKCode.userFunc0xa13038(runtimeScene);
 
 }
 
